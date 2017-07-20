@@ -24,6 +24,7 @@ Route::get('/postjob',function (){
      return view('postjob');
 });
 
+//Data Controller
 Route::get('jobsearch', 'DataController@jobsearch');
 Route::post('jobsearch', 'DataController@customJobSearch')->name('customjobsearch');
 
