@@ -456,7 +456,8 @@
 					</div>
 				</div>
 				<nav class="text-center">
-					<ul class="pagination text-center">
+					{{ $jobs->links()}} <!-- $jobs->render() can also be used -->
+					<!--<ul class="pagination text-center">
 						<li>
 							<a href="#" aria-label="Previous">
 								<span aria-hidden="true">&laquo;</span>
@@ -470,7 +471,7 @@
 								<span aria-hidden="true">&raquo;</span>
 							</a>
 						</li>
-					</ul>
+					</ul>-->
 				</nav>
 			</div>
 		</div>

@@ -17,7 +17,7 @@ class DataController extends Controller
 
     public function jobSearch()
     {
-        $job=DB::table('jobs')->get();
+        $job=DB::table('jobs')->paginate(3);//->get();
         return view('jobsearch')->with('jobs',$job);
     }
    

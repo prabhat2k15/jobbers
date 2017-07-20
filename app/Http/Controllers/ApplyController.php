@@ -14,7 +14,7 @@ class ApplyController extends Controller
     public function apply(Request $request)
     {
         echo "Applied<br>";
-        echo $request->ip();
+       
         
     }
 

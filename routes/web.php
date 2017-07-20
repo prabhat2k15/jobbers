@@ -24,6 +24,8 @@ Route::get('/postjob',function (){
      return view('postjob');
 });
 
+
+
 //Data Controller
 Route::get('jobsearch', 'DataController@jobsearch');
 Route::post('jobsearch', 'DataController@customJobSearch')->name('customjobsearch');
@@ -32,15 +34,27 @@ Route::post('postjobsubmit','DataController@jobpostsubmit');
 
 Route::post('profilesubmit','DataController@profileSubmit')->name('profilesubmit');
 
-//Apply Controller
 
+
+
+
+
+
+//Apply Controller
 Route::get('apply','ApplyController@apply')->name('applyjob');
 
 Route::get('jobdescription/{jobid}','ApplyController@viewJobDescription')->name('jd');
 
+
+
+
+
+
+
 Route::get('profile',function(){
     return view('profile');
 });
+
 
 Route::get('editprofile',function(){
     return view('editprofile');
