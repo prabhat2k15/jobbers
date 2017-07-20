@@ -11,9 +11,11 @@ class ApplyController extends Controller
     {
         $this->middleware('auth');
     }
-    public function apply()
+    public function apply(Request $request)
     {
-        echo "Applied";
+        echo "Applied<br>";
+        echo $request->ip();
+        
     }
 
     public function viewJobDescription($jobid)

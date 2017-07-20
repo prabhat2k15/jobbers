@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Schema;
 use DB;
 use Image;
 use Auth;
-use Illuminate\Http\Request;
+use Illuminate\Http\Request; 
 
 class DataController extends Controller
 {

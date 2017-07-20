@@ -20,7 +20,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/postjob',function (){
+Route::get('/postjob',function (){ 
      return view('postjob');
 });
 
@@ -28,6 +28,10 @@ Route::get('jobsearch', 'DataController@jobsearch');
 Route::post('jobsearch', 'DataController@customJobSearch')->name('customjobsearch');
 
 Route::post('postjobsubmit','DataController@jobpostsubmit');
+
+Route::post('profilesubmit','DataController@profileSubmit')->name('profilesubmit');
+
+//Apply Controller
 
 Route::get('apply','ApplyController@apply')->name('applyjob');
 
@@ -41,5 +45,5 @@ Route::get('editprofile',function(){
     return view('editprofile');
 })->name('editprofile')->Middleware('auth');
 
-Route::post('profilesubmit','DataController@profileSubmit')->name('profilesubmit');
+
 
